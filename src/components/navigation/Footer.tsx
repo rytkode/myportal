@@ -129,8 +129,8 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <MapPin size={18} className="text-accent-500 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-neutral-300">
-                  58, Shiv Shakti Nagar,<br />
-                  Mansarovar, Jaipur - 302020
+                  SY 6 MR PRIME, BP RAJU MARG, WHITEFIELDS<br />
+                  SERILINGAMPALLY, KONDAPUR, K.V.RANGAREDDY-500084
                 </span>
               </li>
               <li className="flex items-center">
