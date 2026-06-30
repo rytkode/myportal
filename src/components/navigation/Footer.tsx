@@ -19,36 +19,36 @@ const Footer: React.FC = () => {
               Delivering innovative IT solutions to help businesses transform, grow, and succeed in today's digital landscape.
             </p>
             <div className="flex space-x-4">
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
+              <a
+                href="https://linkedin.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-400 hover:text-white transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
               </a>
-              <a 
-                href="https://twitter.com" 
-                target="_blank" 
+              <a
+                href="https://twitter.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-400 hover:text-white transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter size={20} />
               </a>
-              <a 
-                href="https://facebook.com" 
-                target="_blank" 
+              <a
+                href="https://facebook.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-400 hover:text-white transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook size={20} />
               </a>
-              <a 
-                href="https://instagram.com" 
-                target="_blank" 
+              <a
+                href="https://instagram.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-400 hover:text-white transition-colors"
                 aria-label="Instagram"
@@ -132,12 +132,6 @@ const Footer: React.FC = () => {
                   SY 6 MR PRIME, BP RAJU MARG, WHITEFIELDS<br />
                   SERILINGAMPALLY, KONDAPUR, K.V.RANGAREDDY-500084
                 </span>
-              </li>
-              <li className="flex items-center">
-                <Phone size={18} className="text-accent-500 mr-3 flex-shrink-0" />
-                <a href="tel:+14155552671" className="text-neutral-300 hover:text-white transition-colors">
-                  (91) 7300465258
-                </a>
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="text-accent-500 mr-3 flex-shrink-0" />

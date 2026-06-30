@@ -13,7 +13,7 @@ const ContactPage: React.FC = () => {
     message: '',
     service: '',
   });
-  
+
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -27,7 +27,7 @@ const ContactPage: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsLoading(false);
@@ -56,7 +56,7 @@ const ContactPage: React.FC = () => {
           >
             Get in Touch
           </motion.h1>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -67,7 +67,7 @@ const ContactPage: React.FC = () => {
           </motion.p>
         </div>
       </Section>
-      
+
       {/* Contact Form & Info */}
       <Section background="white" spacing="xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -81,20 +81,8 @@ const ContactPage: React.FC = () => {
             <p className="text-neutral-600 mb-8">
               Our team is ready to answer your questions and discuss how we can help your business succeed.
             </p>
-            
+
             <div className="space-y-6 mb-12">
-              <div className="flex items-start">
-                <div className="h-12 w-12 rounded-full bg-primary-100 flex items-center justify-center text-primary-900 mr-4">
-                  <Phone size={20} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold">Phone</h4>
-                  <a href="tel:+14155552671" className="text-neutral-600 hover:text-primary-900 transition-colors">
-                    (91) 7300465258
-                  </a>
-                </div>
-              </div>
-              
               <div className="flex items-start">
                 <div className="h-12 w-12 rounded-full bg-primary-100 flex items-center justify-center text-primary-900 mr-4">
                   <Mail size={20} />
@@ -106,7 +94,7 @@ const ContactPage: React.FC = () => {
                   </a>
                 </div>
               </div>
-              
+
               <div className="flex items-start">
                 <div className="h-12 w-12 rounded-full bg-primary-100 flex items-center justify-center text-primary-900 mr-4">
                   <MapPin size={20} />
@@ -114,13 +102,13 @@ const ContactPage: React.FC = () => {
                 <div>
                   <h4 className="text-lg font-semibold">Office</h4>
                   <address className="text-neutral-600 not-italic">
-                  SY 6 MR PRIME, BP RAJU MARG, WHITEFIELDS<br />
-                  SERILINGAMPALLY, KONDAPUR, K.V.RANGAREDDY-500084
+                    SY 6 MR PRIME, BP RAJU MARG, WHITEFIELDS<br />
+                    SERILINGAMPALLY, KONDAPUR, K.V.RANGAREDDY-500084
                   </address>
                 </div>
               </div>
             </div>
-            
+
             <div>
               <h3 className="text-xl font-semibold mb-4">Business Hours</h3>
               <table className="w-full text-neutral-600">
@@ -141,7 +129,7 @@ const ContactPage: React.FC = () => {
               </table>
             </div>
           </motion.div>
-          
+
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
@@ -158,7 +146,7 @@ const ContactPage: React.FC = () => {
                   <p className="text-neutral-600 mb-6">
                     Thank you for reaching out. We'll get back to you within 24 hours.
                   </p>
-                  <Button 
+                  <Button
                     onClick={() => setIsSubmitted(false)}
                     variant="primary"
                   >
@@ -185,7 +173,7 @@ const ContactPage: React.FC = () => {
                           placeholder="Your name"
                         />
                       </div>
-                      
+
                       <div>
                         <label htmlFor="email" className="block text-sm font-medium text-neutral-700 mb-2">
                           Email Address *
@@ -201,7 +189,7 @@ const ContactPage: React.FC = () => {
                           placeholder="your.email@example.com"
                         />
                       </div>
-                      
+
                       <div>
                         <label htmlFor="phone" className="block text-sm font-medium text-neutral-700 mb-2">
                           Phone Number
@@ -216,7 +204,7 @@ const ContactPage: React.FC = () => {
                           placeholder="(123) 456-7890"
                         />
                       </div>
-                      
+
                       <div>
                         <label htmlFor="company" className="block text-sm font-medium text-neutral-700 mb-2">
                           Company
@@ -232,7 +220,7 @@ const ContactPage: React.FC = () => {
                         />
                       </div>
                     </div>
-                    
+
                     <div className="mb-6">
                       <label htmlFor="service" className="block text-sm font-medium text-neutral-700 mb-2">
                         Service of Interest
@@ -253,7 +241,7 @@ const ContactPage: React.FC = () => {
                         <option value="other">Other</option>
                       </select>
                     </div>
-                    
+
                     <div className="mb-6">
                       <label htmlFor="message" className="block text-sm font-medium text-neutral-700 mb-2">
                         Your Message *
@@ -269,7 +257,7 @@ const ContactPage: React.FC = () => {
                         placeholder="Tell us about your project or inquiry..."
                       ></textarea>
                     </div>
-                    
+
                     <Button
                       type="submit"
                       variant="primary"
@@ -286,7 +274,7 @@ const ContactPage: React.FC = () => {
           </motion.div>
         </div>
       </Section>
-      
+
       {/* Map Section */}
       <Section background="light" spacing="lg">
         <div className="max-w-4xl mx-auto text-center mb-12">
@@ -295,9 +283,9 @@ const ContactPage: React.FC = () => {
             We're conveniently located in the heart of Silicon Valley.
           </p>
         </div>
-        
+
         <div className="relative h-[400px] rounded-xl overflow-hidden shadow-md">
-          <img 
+          <img
             src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt="Map location"
             className="w-full h-full object-cover"
@@ -309,8 +297,8 @@ const ContactPage: React.FC = () => {
                 1234 Tech Avenue,<br />
                 Silicon Valley, CA 94043
               </p>
-              <Button 
-                href="https://maps.google.com" 
+              <Button
+                href="https://maps.google.com"
                 variant="primary"
                 fullWidth
               >
